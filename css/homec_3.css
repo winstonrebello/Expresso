@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans&display=swap');
+
+    .footer {
+        width: 100%;
+        height: 240px;
+        background-color: #1F1E20;
+        margin-top: 50px;
+    }
+
+    .foot-content {
+        width: auto;
+        height: 170px;
+        padding-top: 30px;
+        font-family: Arial;
+        display: flex;
+    }
+
+    .foot-base {
+
+        height: 70px;
+        background-color: #1F1E20;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .foot-base hr{
+        height: 5px;
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    .foot-base p{
+        margin-left: 50px;
+    }
+
+    #email-id{
+        text-decoration: none;
+        color : orange;
+        font-family: Arial;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 15px; 
+    }
+
+    #foot-logo {
+        flex: 2;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #foot-logo img {
+        border-radius: 50px;
+        box-shadow: 0 1px 8px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.1) inset;
+    }
+
+    #foot-main, #foot-social, #foot-resources, #foot-legal {
+        flex: 1;
+        text-align: center;
+    }
+
+    #foot-main p, #foot-social p, #foot-resources p, #foot-legal p {
+        flex: 1;
+        color: white;
+        font-size: 25px;
+        font-family: Aladin;
+        text-align: center;
+    }
+
+    #foot-main ul li, #foot-resources ul li, #foot-legal ul li, #foot-social ul li {
+        list-style: none;
+        padding: 5px 0px;
+    }
+
+    #foot-main ul li a, #foot-resources ul li a, #foot-legal ul li a, #foot-social ul li a {
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    #foot-main ul li a:hover, #foot-resources ul li a:hover, #foot-legal ul li a:hover, #foot-social ul li a:hover{
+        font-size: 15px;
+        font-weight: bold;
+        color : rgba(255,255,255,0.3);
+        transition: 0.5s ease;
+    }
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+.review-slider {
+    width: auto;
+    height: 370px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    background-color: #e3e1e1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.review-title {
+    width: auto;
+    height: 70px;
+    display: flex;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title-text{
+    display : flex;
+}
+
+.review-title h3 {
+    margin: 0px 20px;
+    font-family: 'Candal',serif;
+    font-size: 20px;
+    flex: 2;
+}
+
+.review-title p {
+    margin-left: 20px;
+    margin-top: 9px;
+    color: #a7a5a5;
+    font-family: sans-serif;
+    font-size : 15px;
+}
+
+
+.review-title div {
+    position: relative;
+    background-color: white;
+    flex: 5;
+}
+
+.review-title b button {
+    width: 80px;
+    height: 35px;
+    border: none;
+    margin-top : 10px;
+    float: right;
+    margin-right: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.review-con-holder {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.review-content {
+    width: auto;
+    height: 300px;
+    margin-top: 3px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.slick-track{
+    display: flex;
+    z-index: 1;
+}
+
+.review {
+    width: auto;
+    height: 275px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#review-dell-1-img{
+    width: 75px;
+    height: 155px;
+}
+
+#review-dell-1-img:hover{
+    width: 85px;
+    height: 165px;
+}
+
+.review h4 {
+    height: auto;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.review p {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #33b201;
+}
+
+.reviewnext {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    padding: 50px 20px;
+    top: 80px;
+    right: 0px;
+    color: white;
+    background-color: #44F4FF;
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.reviewprev {
+    position: absolute;
+    cursor: pointer;
+    padding: 50px 20px;
+    top: 80px;
+    color: white;
+    display: inline-flex;
+    background-color: #44F4FF;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}

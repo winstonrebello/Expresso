@@ -1,0 +1,77 @@
+.search-box {
+  position: relative;
+  padding-left: 50px;
+}
+
+.display-box {
+  position: absolute;
+  max-height: 350px;
+  overflow-y: scroll;
+  background: white;
+  overflow-x: hidden;
+  width: 66%;
+  font-size: 13px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5), 0 1px 20px rgba(0,0,0,0.0) inset;
+  top:55px;
+}
+
+/* width */
+.display-box::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+/*.display-box::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 5px;
+  margin-left: -20px;
+}*/
+
+/* Handle */
+.display-box::-webkit-scrollbar-thumb {
+  background: #131F8E;
+  border-radius: 5px;
+  height: 100px;
+  scroll-behavior: smooth;
+}
+
+/* Handle on hover */
+.display-box::-webkit-scrollbar-thumb:hover {
+  background: #00095B;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column25 {
+	float:left;
+	width:25%;
+	padding:10px;
+  padding-left: 40px;
+}
+
+.column75 {
+	float:left;
+	width:55%;
+	padding:10px;
+  margin-left: 30px;
+}
+
+.column25 img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 0px;
+  margin: auto;
+}

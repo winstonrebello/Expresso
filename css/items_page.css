@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto Slab&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contents{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: #EDE7E7;
+}
+
+.filter{
+	margin: 10px 5px;
+	margin-top: 10px;
+	border-radius: 3px;
+	flex : 1;
+}
+
+#filt-head{
+	padding : 10px 15px;
+	background-color: white;
+}
+
+#filt-brand{
+	padding : 10px 15px;
+	background-color: white;
+	margin-top: 1px;
+}
+
+#filt-brand div label, #filt-price div label, #filt-rate div label{
+	font-weight: lighter;
+}
+
+#filt-rate{
+	padding : 10px 15px;
+	background-color: white;
+	margin-top: 1px;
+}
+
+.checked{
+	color : orange;
+}
+
+#filt-price{
+	padding : 10px 15px;
+	background-color: white;
+	margin-top: 1px;
+}
+
+.prod-items{
+	margin: 10px 5px;
+	margin-top: 10px;
+	border-radius: 3px;
+	flex : 3;
+}
+
+.prod-items a{
+	text-decoration: none;
+	color : black;
+}
+
+#res-header{
+	height: 100px;
+	background-color: white;
+}
+
+#res-con{
+	margin-top: 1px;
+	padding: 10px 15px;
+	background-color: white;
+	display: flex;
+	padding-top: 20px;
+	cursor: pointer;
+}
+
+#res-con:hover #des-title{
+	color : #0085FF;
+}
+
+#item-img{
+	flex : 1;
+	position : relative;
+	max-width : 150px;
+	max-height : 160px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#item-img img{
+	position : absolute;
+	width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#item-des{
+	flex : 3;
+}
+
+#item-price{
+	flex : 1;
+}
+
+#des-title{
+	font-family: Roboto Slab;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#des-con{
+	width : 400px;
+    overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+#des-report{
+	display: flex;
+	text-align: center;
+}
+
+#des-rate{
+	width: 45px;
+	height: 22px;
+	background-color: #25A431;
+	border-radius: 3px;
+	color : white;
+	display: flex;
+	justify-content: center;
+}
+
+#des-r{
+	margin-left: 10px;
+	font-weight: bold;
+	color : grey;
+}
+
+#des-rate p{
+	padding-top: 2px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.fa{
+	font-size: 12px;
+	margin-left: 5px;
+	align-self: center;
+	justify-content: center;
+}
+
+#item-price{
+	font-weight: bold;
+	font-size: 25px;
+	font-family: Roboto Slab;
+	text-align: center;
+	align-self: center;
+	color : #;
+}

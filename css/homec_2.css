@@ -1,0 +1,426 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+.best-slider {
+	width: auto;
+	height: 350px;
+	margin:20px 20px;
+	border-radius: 5px;
+	background-color : #e3e1e1;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.4), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.best-title {
+	width: auto;
+	height: 50px;
+	display: flex;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.best-title h3{
+	margin: 0px 20px;
+	font-family: 'Candal',serif;
+	font-size: 20px;
+	flex:1;
+}
+
+.best-title div {
+	position: relative;
+	background-color: white;
+	flex: 1;
+}
+
+.best-title b button {
+	width: 80px;
+	height: 35px;
+	border: none;
+	float: right;
+	margin-right: 10px;
+	background-color: blue;
+	color: white;
+	font-size: 13px;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+/*////////////////////////////////////////*/
+
+.best-con-holder {
+	position: relative;
+	width: 100%;
+	height: 250px;
+}
+
+.best-content {
+	width: 100%;
+	height: 300px;
+	margin-top: 3px;
+	overflow : hidden;
+	background-color: white;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.best {
+	height: 300px;
+	color: white;
+	padding-top : 20px;
+	text-align : center;
+	display : inline-block;
+	padding-left: 10px;
+	/*background-color : rgba(0,0,0,0.6);*/
+	cursor :pointer;
+}
+
+#best-dell-1-img{
+    width: 75px;
+    height: 155px;
+}
+
+#best-dell-1-img:hover{
+    width: 85px;
+    height: 165px;
+}
+
+/*/////////////////////////////////////////////*/
+
+#best-pname{
+	margin-top: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow: hidden;
+    color : #000000;
+}
+
+.best p {
+	font-family: sans-serif;
+	font-size: 13px;
+	color: #33b201;
+}
+
+.bestnext {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	padding: 50px 20px;
+	top: 80px;
+	right: 0px;
+	color: white;
+	background-color: #44F4FF;
+	border-radius: 8px 0px 0px 8px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.bestprev {
+	position: absolute;
+	cursor: pointer;
+	padding: 50px 20px;
+	top: 80px;
+	color: white;
+	display: inline-flex;
+	background-color: #44F4FF;
+	border-radius: 0px 8px 8px 0px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.ephone-slider {
+	width: auto;
+	height: 370px;
+	margin: 20px 20px;
+	border-radius: 5px;
+	background-color: #e3e1e1;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+
+
+.ephone-title {
+	width: auto;
+	height: 70px;
+	display: flex;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.title-text {
+	display: flex;
+}
+
+.ephone-title h3 {
+	margin: 0px 20px;
+	font-family: 'Candal',serif;
+	font-size: 20px;
+	flex: 2;
+}
+
+.ephone-title p {
+	margin-left: 20px;
+	margin-top: 9px;
+	color: #a7a5a5;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+
+.ephone-title div {
+	position: relative;
+	background-color: white;
+	flex: 5;
+}
+
+.ephone-title b button {
+	width: 80px;
+	height: 35px;
+	border: none;
+	margin-top: 10px;
+	float: right;
+	margin-right: 10px;
+	background-color: blue;
+	color: white;
+	font-size: 13px;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+/*////////////////////////////////////////*/
+
+.ephone-con-holder {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	outline: none;
+}
+
+.ephone-content {
+	width: 100%;
+	height: 300px;
+	margin-top: 2px;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 0px 0px 5px 5px;
+	outline: none;
+}
+
+.ephone {
+	width: auto;
+	height: 300px;
+	color: white;
+	padding-top: 50px;
+	text-align: center;
+	display: inline-block;
+	padding-left: 10px;
+	cursor: pointer;
+	outline-color: white;
+}
+
+#ephone-boat-e-img{
+	width : 120px;
+	height: 133px;
+	outline: none;
+	outline-color: white;
+}
+
+#ephone-boat-e-img:hover{
+	width : 130px;
+	height: 143px;
+}
+
+/*/////////////////////////////////////////////*/
+
+#ephone-pname{
+	margin-top: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow: hidden;
+    color : #000000;
+    outline: none;
+}
+
+.ephone p{
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #33b201;
+	outline: none;
+	border : none;
+}
+
+.ephonenext {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	padding: 50px 20px;
+	top: 80px;
+	right: 0px;
+	color: white;
+	background-color: #44F4FF;
+	border-radius: 8px 0px 0px 8px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.ephoneprev {
+	position: absolute;
+	cursor: pointer;
+	padding: 50px 20px;
+	top: 80px;
+	color: white;
+	display: inline-flex;
+	background-color: #44F4FF;
+	border-radius: 0px 8px 8px 0px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.ephonenext:hover{
+	background-color: #00BBC7;
+	transition: 0.3s ease-out;
+}
+
+.ephoneprev:hover{
+	background-color: #00BBC7;
+	transition: 0.3s ease-out;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.lap-slider {
+	width: auto;
+	height: 350px;
+	margin:20px 20px;
+	border-radius: 5px;
+	background-color : #e3e1e1;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.4), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.lap-title {
+	width: auto;
+	height: 50px;
+	display: flex;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.lap-title h3{
+	margin: 0px 20px;
+	font-family: 'Candal',serif;
+	font-size: 20px;
+	flex:1;
+}
+
+.lap-title div {
+	position: relative;
+	background-color: white;
+	flex: 1;
+}
+
+.lap-title b button {
+	width: 80px;
+	height: 35px;
+	border: none;
+	float: right;
+	margin-right: 10px;
+	background-color: blue;
+	color: white;
+	font-size: 13px;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+/*////////////////////////////////////////*/
+
+.lap-con-holder {
+	position: relative;
+	width: 100%;
+	height: 250px;
+}
+
+.lap-content {
+	width: 100%;
+	height: 300px;
+	margin-top: 3px;
+	overflow : hidden;
+	background-color: white;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.lap {
+	height: 300px;
+	color: white;
+	padding-top : 20px;
+	text-align : center;
+	display : inline-block;
+	margin-left: 10px;
+	cursor :pointer;
+}
+/*/////////////////////////////////////////////*/
+
+#lap-dell-1-img{
+	width: 140px;
+	height: 107px;
+}
+
+#lap-dell-1-img:hover{
+	width: 150px;
+	height: 117px;
+}
+
+/*/////////////////////////////////////////////*/
+
+#lap-pname{
+	margin-top: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow: hidden;
+    color : #000000;
+}
+
+
+.lap p {
+	font-family: sans-serif;
+	font-size: 13px;
+	color: #33b201;
+}
+
+.lapnext {
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+	padding: 50px 20px;
+	top: 80px;
+	right: 0px;
+	color: white;
+	background-color: #44F4FF;
+	border-radius: 8px 0px 0px 8px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.lapprev {
+	position: absolute;
+	cursor: pointer;
+	padding: 50px 20px;
+	top: 80px;
+	color: white;
+	display: inline-flex;
+	background-color: #44F4FF;
+	border-radius: 0px 8px 8px 0px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
