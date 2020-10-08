@@ -1,0 +1,47 @@
+            <div class="container pagination justify-content-center">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="users.php?page=<?php echo $Prev; ?>&change=num"><i class="fa fa-angle-double-left"></i>&nbsp;Previous</a></li>
+
+                  <?php for($i=1; $i <= $tpages; $i++){ ?>
+                      <li class="page-item <?php if($i==$change_indi){ echo 'active'; } ?>"><a class="page-link" href="users.php?page=<?php echo $i; ?>&change=num"><?php echo $i; ?></a></li>
+                  <?php } ?>    
+
+                  <li class="page-item"><a class="page-link" href="users.php?page=<?php echo $Next; ?>&change=num">Next&nbsp;<i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+
+
+/////////////////////////////////////////
+
+
+$limit= 10;
+                    $total= 0;
+                    $page= isset($_GET['page']) ? $_GET['page'] : 1;
+                    $start= ($page - 1) * $limit;
+
+                    $select_1 = mysqli_query($conn,"SELECT DISTINCT session FROM page_analytics ORDER BY id DESC");
+                    while($s_1 = mysqli_fetch_array($select_1)){
+                        $total= $total + 1;
+                    }
+
+                    $tpages= ceil( $total / $limit );
+                    $Prev= $page - 1;
+                    $Next= $page + 1;
+
+
+                    $select = mysqli_query($conn,"SELECT DISTINCT session FROM page_analytics ORDER BY id DESC LIMIT $start, $limit");
+
+//////////////////////////////////////////////////
+
+
+<?php
+          $change_indi= 0;
+          if(isset($_GET['change'])){
+              if(isset($_GET['page'])){
+                  $change_indi= $_GET['page'];
+              }
+              else{
+                  $change_indi= 1;
+              }
+          }
+      ?>

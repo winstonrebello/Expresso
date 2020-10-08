@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: initial;
+}
+    
+body {
+    background-color: #f0efef;
+}
+
+.img-slider {
+    background-color: white;
+}
+
+.center-block {
+    padding: 20px;
+    object-fit: cover;
+}
+
+.carousel-caption h3{
+    font-weight: bold;
+    color : black;
+    font-family: Aladin;
+}
+
+.nav-div{
+    position : sticky;
+    z-index : 5;
+    top : 0;
+}
+
+.navi {
+    background-color: #00095B;
+    position : relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+.navi:before, .navi:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+.navi:after{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+}
+
+#img-slider{
+    position : relative;
+    z-index : 0;
+}
+
+#web-name{
+    align-self: center;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex : 1;
+}
+
+#web-logo{
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 1px 8px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.1) inset;
+    flex: 1;
+}
+
+.navbtns {
+    display: flex;
+    flex: 2;
+}
+
+.navbtns ul {
+    margin :0px;
+    padding : 0px;
+    list-style : none;
+}
+
+.navbtns ul li{
+    float: left;
+    width: 120px;
+    height: 70px;
+    color : #fff;
+    background-color: #00095B;
+    line-height: 70px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.drop{
+    width: 120px;
+    height: 50px;
+    color : #fff;
+    background-color: #00095B;
+    line-height: 50px;
+    text-align: center;
+    font-size: 22px;
+    display: none;
+    cursor: pointer;
+}
+
+.navbtns ul li a{
+    text-decoration: none;
+    color : white;
+    display: block;
+    font-family: Aladin;
+}
+
+.navbtns ul li a:hover{
+    text-decoration: none;
+    color: #ffc800;
+    transform: translateY(-5px);
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.navbtns ul li:hover ul li{
+    transition: 1s ease;
+    display: block;
+}
+
+.search-box {
+    display: flex;
+    flex: 2;
+}
+
+#search-input{
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    height: 40px;
+    width: 330px;
+    margin: 13px 0px;
+    outline: 1px auto #CDCDCD;
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+#s_btn {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #CDCDCD;
+}
+
+#s_btn:hover {
+    color: #ffc800;
+    transition: 0.4s ease;
+}
+
+.navicons{
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-cartt{
+    align-self: center;
+}
+
+.navicons a i{
+    color: #CDCDCD;
+    padding: 22px 0px;
+}
+
+#nav_c{
+    text-align: center;
+    flex: 1;
+    margin-left: 20px;
+}
+
+#nav-cart{
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    flex: 1;
+}
+
+#login{
+    display : none;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+#logged{
+    display : none;
+}
+
+.login-arrow-up {
+    width: 0;
+    height: 0;
+    top: 52.5px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    z-index: 2;
+    margin-left: 35px;
+}
+
+.login-form {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: #EFEEEE;
+    z-index: 1;
+    right: 100px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 1px 20px rgba(0,0,0,0.0) inset;
+    margin-top:-10px;
+}
+
+.login-p,.logged-p{
+    padding-top: 15px;
+    width : auto;
+    height : 55px;
+    margin-top: 1px;
+    background-color : white;
+    cursor: pointer;
+    margin-bottom: 0px;
+    text-align: left;
+    padding-left: 20px;  
+    border-radius: 2px;
+}
+
+
+/*.log a{
+    text-decoration: none;
+    color : black;
+}*/
+
+.login-p:hover{
+    background-color: #eeeeee;
+    transition: 0.3s ease;
+}
+
+.logged-arrow-up {
+    width: 0;
+    height: 0;
+    top: 55px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    margin-left: 35px;
+}
+
+.logged-form {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    z-index: 1;
+    right: 100px;
+    top: 65px;
+}
+
+
+.logged-p i,.login-p i{
+    margin-left: 20px;
+    color : #0085FF;
+}
+
+/*.logged-p a,.login-p a{
+    text-decoration: none;
+    color : black;
+}*/
+
+.logged-p:hover{
+    background-color: #eeeeee;
+    transition: 0.3s ease;
+}
+
+
+
+#no-cart{
+    height: 20px;
+    width: 20px;
+    background-color: orange;
+    color: white;
+    border-radius: 7px;
+    border: 1.5px solid;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.navicons a:hover i{
+    color: #ffc800;
+}
+
+#nav_c:hover #login{
+    display: block;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.dd {
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.deal-slider {
+    width: auto;
+    height: 370px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    background-color: #e3e1e1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.deal-title {
+    width: auto;
+    height: 70px;
+    display: flex;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title-text{
+    display : flex;
+}
+
+.deal-title h3 {
+    margin: 0px 20px;
+    font-family: 'Candal',serif;
+    font-size: 20px;
+    flex: 2;
+}
+
+.deal-title p {
+    margin-left: 20px;
+    margin-top: 9px;
+    color: #a7a5a5;
+    font-family: sans-serif;
+    font-size : 15px;
+}
+
+
+.deal-title div {
+    position: relative;
+    background-color: white;
+    flex: 5;
+}
+
+.deal-title b button {
+    width: 80px;
+    height: 35px;
+    border: none;
+    margin-top : 10px;
+    float: right;
+    margin-right: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.deal-con-holder {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.deal-content {
+    width: auto;
+    height: 300px;
+    margin-top: 2px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.post {
+    width: auto;
+    height: 300px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+}
+#post-sam-img, #post-oppo-img, #post-realme-img, #post-oneplus-img {
+    width: 80px;
+    height: 160px;
+    margin-top: -10px;
+    align-self: center;
+}
+
+#post-acer-img {
+    width: 150px;
+    height: 117px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+#post-skull-h-2-img {
+    width: 120px;
+    height: 134px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+#post-jbl-img {
+    width: 150px;
+    height: 160px;
+    margin-top: -10px;
+    align-self: center;
+}
+
+#post-headphone-img {
+    width: 120px;
+    height: 130px;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.post:hover > #post-sam-img, .post:hover > #post-oppo-img, .post:hover > #post-realme-img, .post:hover > #post-oneplus-img {
+    width: 75px;
+    height: 155px;
+}
+
+.post:hover > #post-skull-h-2-img {
+    width: 115px;
+    height: 129px;
+}
+
+.post:hover > #post-acer-img {
+    width: 145px;
+    height: 112px;
+}
+
+.post:hover > #post-jbl-img {
+    width: 145px;
+    height: 155px;
+}
+
+.post:hover > #post-headphone-img {
+    width: 115px;
+    height: 125px;
+}
+
+.post h4 {
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #242424;
+}
+
+.post p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #33b201;
+}
+
+.dealnext {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    padding: 50px 20px;
+    top: 80px;
+    right: 0px;
+    color: white;
+    background-color: #44F4FF;
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.dealprev {
+    position: absolute;
+    cursor: pointer;
+    padding: 50px 20px;
+    top: 80px;
+    color: white;
+    display: inline-flex;
+    background-color: #44F4FF;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.6), 0 1px 20px rgba(0,0,0,0.0) inset;
+}
+
+.dealnext:hover,.dealprev:hover{
+    background-color: #00BBC7;
+    transition: 0.3s ease-out;
+}

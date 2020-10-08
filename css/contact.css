@@ -1,0 +1,220 @@
+body{
+	background-color: #363636;
+}
+
+#page-divider{
+	margin: 0 50px;
+	margin-top: 50px;
+}
+
+#help-header{
+	position: relative;
+	width: 100%;
+	height: 322px;
+	left: 0px;
+	top: 0;
+	background: #060613;
+	filter: drop-shadow(0px 4px 5px rgba(255, 255, 255, 0.4));
+}
+
+#head-title{
+	padding-top: 30px;
+	font-size:30px;
+	font-weight: bold;
+	color : white;
+	font-family: Open Sans;
+}
+
+.help-about{
+	display: flex;
+	width: auto;
+	height: auto;
+	justify-content: center;
+}
+
+#contact{
+	color : #ffc800;
+}
+
+#abt-are{
+	width: 300px;
+	height: auto;
+	margin-top: -150px;
+	z-index: 1;
+	border-radius: 15px;
+	background-color: #212121;
+	border: 1px solid #BABABA;
+	color : white;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#abt-want{
+	width: 300px;
+	height: auto;
+	margin-top: -150px;
+	z-index: 1;
+	border-radius: 15px;
+	background-color: #212121;
+	border: 1px solid #BABABA;
+	color : white;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: 50px;
+}
+
+#abt-will{
+	width: 300px;
+	height: auto;
+	margin-top: -150px;
+	z-index: 1;
+	border-radius: 15px;
+	background-color: #212121;
+	border: 1px solid #BABABA;
+	color : white;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: 50px;
+}
+
+
+
+#abt-are img,#abt-want img,#abt-will img{
+	margin-top: 7px;
+	border-radius: 5px;
+}
+
+#abt-are h2,#abt-want h2,#abt-will h2{
+	font-family: Aladin;
+}
+
+#abt-are p,#abt-want p,#abt-will p{
+	padding: 0 20px;
+}
+
+#read-more-btn-1{
+	color : black;
+	padding: 0px 10px;
+}
+
+#read-more-btn-2{
+	color : black;
+	padding: 0px 10px;
+}
+
+.rotated-image{
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-360deg);
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+#help-con-head{
+	margin-top: 80px;	
+	font-size:30px;
+	font-weight: bold;
+	color : white;
+	font-family: Open Sans;
+}
+
+#con-container{
+	width: 800px;
+	height: 520px;
+	background-color: #060613;
+	margin-top: 30px;
+	border-radius: 10px;
+	box-shadow:0 1px 4px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 0, 0, 0.5) inset;
+}
+
+#contact_details{
+	text-align: left;
+	margin-left:50px;
+	font-size: 17px;
+}
+
+.fas,.fa{
+	color : #ffc800;
+}
+
+.emp_names{
+	font-family: Candal;
+}
+
+#mem-1-details p{
+	font-size: 13px;
+	margin-left:50px;
+}
+
+#con-sub{
+	padding: 20px 20px;
+	font-size: 15px;
+}
+
+
+
+#help-info-head{
+	margin-top: 80px;	
+	font-size:30px;
+	font-weight: bold;
+	color : white;
+	font-family: Open Sans;
+}
+
+#info-container{
+	width: 600px;
+	height: 350px;
+	background-color: #060613;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	border-radius: 10px;
+	box-shadow:0 1px 4px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 0, 0, 0.5) inset;
+}
+
+#info-form{
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	margin: 20px 20px;
+	color : black;
+}
+
+#inp-info-name,#inp-info-email{
+	padding: 10px 10px;
+	padding-right: 370px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 30px;
+	background-color: #E0E0E0;
+}
+
+#inp-info-query{
+	outline: none;
+	border: none;
+	padding-left: 10px;
+	padding: 10px 10px;
+	line-height: 50px;
+	border-radius: 5px;
+	background-color: #E0E0E0;
+	margin-bottom: 30px;
+}
+
+#inp-info-submit{
+	padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #FA405C;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 20px rgba(0,0,0,0.1) inset;
+    transition : 0.3s ease;
+}
+
+#inp-info-name:focus,#inp-info-email:focus,#inp-info-query:focus{
+	opacity : 1;
+	border-bottom : solid 3px blue;
+	transition: 0.3s ease-in-out;
+}
