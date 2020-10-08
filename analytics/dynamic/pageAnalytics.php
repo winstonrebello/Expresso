@@ -18,5 +18,4 @@ if(!mysqli_query($conn,"INSERT INTO page_analytics VALUES('','$user_sess','$user
   $error = "Error updating analytical data on ".$url;
   mysqli_query($conn,"INSERT INTO errors VALUES('','".mysqli_real_escape_string($conn,$error)."')");
 }
-
  ?>

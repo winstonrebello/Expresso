@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Oct 08, 2020 at 05:35 AM
+=======
+-- Generation Time: Oct 04, 2020 at 01:05 PM
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.32
 
@@ -267,8 +271,12 @@ INSERT INTO `orders` (`id`, `uid`, `name`, `email`, `mobile`, `address`, `pincod
 (117, 8, 'Sujeet Pal', 'q', '9326121847', 'q', 'q', 'q', 81995239, '29/09/20 09:39:37', 1, 3, 1, '2020-09-29'),
 (118, 8, 'Sujeet Pal', 'a', '9326121847', 'a', 'a', 'a', 34088672, '29/09/20 09:41:06', 3, 3, 1, '2020-09-29'),
 (119, 8, 'Sujeet Pal', 'ggg', '9326121847', 'ggg', '451', 'ggrg', 13324511, '30/09/20 07:28:46', 3, 1, 1, '2020-09-30'),
+<<<<<<< HEAD
 (120, 8, 'Sujeet Pal', 'a', '9326121847', 'a', 'a', 'a', 50451453, '04/10/20', 3, 1, 3, '2020-10-04'),
 (121, 8, 'Sujeet Pal', 'palsujit32@gmail.com', '9326121847', 'a', 'a', 'a', 85813360, '06/10/20', 3, 3, 3, '2020-10-06');
+=======
+(120, 8, 'Sujeet Pal', 'a', '9326121847', 'a', 'a', 'a', 50451453, '04/10/20', 3, 1, 3, '2020-10-04');
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 -- --------------------------------------------------------
 
@@ -737,6 +745,7 @@ INSERT INTO `page_analytics` (`id`, `session`, `user`, `user_type`, `url`, `titl
 (462, 'apmbdnrLe35527', '::1', 0, 'listitems.php?cat=3', 'Laptops', 0, 3, '2020-10-04', 'list', '', '', 'Microsoft Edge', 'Desktop'),
 (463, 'apmbdnrLe35527', '8', 1, 'Home%20Page.php', 'Home', 10, 0, '2020-10-04', 'Home', '', '', 'Microsoft Edge', 'Desktop'),
 (464, 'apmbdnrLe35527', '8', 1, 'itemcart.php', ' Cart', 3, 1, '2020-10-04', 'Cart', '', '', 'Microsoft Edge', 'Desktop'),
+<<<<<<< HEAD
 (465, 'apmbdnrLe35527', '8', 1, 'itemcart.php', ' Cart', 3, 1, '2020-10-04', 'Cart', '', '', 'Microsoft Edge', 'Desktop'),
 (466, 'mgDls4e6x$9772', '::1', 0, 'Home%20Page.php', 'Home', 10, 0, '2020-10-05', 'Home', '', '', 'Microsoft Edge', 'Desktop'),
 (467, 'mgDls4e6x$9772', '::1', 0, 'listitems.php?cat=2', 'Smartphones', 0, 2, '2020-10-05', 'list', '', '', 'Microsoft Edge', 'Desktop'),
@@ -779,6 +788,9 @@ INSERT INTO `page_analytics` (`id`, `session`, `user`, `user_type`, `url`, `titl
 (504, 'G0QyfqfeI67583', '8', 1, 'Home%20Page.php', 'Home', 10, 0, '2020-10-06', 'Home', '', '', 'Microsoft Edge', 'Desktop'),
 (505, 'G0QyfqfeI67583', '8', 1, 'discription.php?id=4&cat=1', 'Sketchfab Extra bass Headphones', 4, 1, '2020-10-06', 'discription', '', '', 'Microsoft Edge', 'Desktop'),
 (506, 'uIG98OexY18576', '::1', 0, 'discription.php?id=3&cat=3', 'ASUS VivoBook 15 Intel Core', 3, 3, '2020-10-07', 'discription', '', '', 'Microsoft Edge', 'Desktop');
+=======
+(465, 'apmbdnrLe35527', '8', 1, 'itemcart.php', ' Cart', 3, 1, '2020-10-04', 'Cart', '', '', 'Microsoft Edge', 'Desktop');
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 -- --------------------------------------------------------
 
@@ -794,6 +806,7 @@ CREATE TABLE `product_impression` (
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+<<<<<<< HEAD
 --
 -- Dumping data for table `product_impression`
 --
@@ -1210,6 +1223,8 @@ INSERT INTO `product_impression` (`id`, `session`, `pid`, `cat`, `date`) VALUES
 (482, 'G0QyfqfeI67583', 3, 3, '2020-10-06'),
 (483, 'G0QyfqfeI67583', 3, 3, '2020-10-06');
 
+=======
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 -- --------------------------------------------------------
 
 --
@@ -1234,8 +1249,12 @@ INSERT INTO `recommend` (`id`, `ip`, `name`) VALUES
 (8, '::1', 'Mi'),
 (9, '::1', 'ODIO'),
 (10, '::1', 'Microsoft'),
+<<<<<<< HEAD
 (11, '::1', 'Coolpad'),
 (12, '::1', 'Sketchfab');
+=======
+(11, '::1', 'Coolpad');
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 -- --------------------------------------------------------
 
@@ -1636,6 +1655,7 @@ INSERT INTO `timing` (`id`, `session`, `url`, `duration`, `date`) VALUES
 (381, 'apmbdnrLe35527', 'itemcart.php', '13.172', '2020/10/04'),
 (382, 'apmbdnrLe35527', 'itemcart.php', '1.006', '2020/10/04'),
 (383, 'apmbdnrLe35527', 'listitems.php?cat=3', '899.636', '2020/10/04'),
+<<<<<<< HEAD
 (384, '!DTLgwzf$37797', 'listitems.php?cat=1', '3142.039', '2020/10/04'),
 (385, 'mgDls4e6x$9772', 'Home%20Page.php', '2.552', '2020/10/05'),
 (386, 'mgDls4e6x$9772', 'listitems.php?cat=2', '301.599', '2020/10/05'),
@@ -1677,6 +1697,9 @@ INSERT INTO `timing` (`id`, `session`, `url`, `duration`, `date`) VALUES
 (422, 'G0QyfqfeI67583', 'Home%20Page.php', '812.041', '2020/10/06'),
 (423, 'G0QyfqfeI67583', 'Home%20Page.php', '1005.229', '2020/10/06'),
 (424, 'uIG98OexY18576', 'discription.php?id=3&cat=3', '2.132', '2020/10/07');
+=======
+(384, '!DTLgwzf$37797', 'listitems.php?cat=1', '3142.039', '2020/10/04');
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 -- --------------------------------------------------------
 
@@ -1687,7 +1710,10 @@ INSERT INTO `timing` (`id`, `session`, `url`, `duration`, `date`) VALUES
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `mobile` text NOT NULL,
+<<<<<<< HEAD
   `mail` varchar(50) NOT NULL,
+=======
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
   `name` text NOT NULL,
   `password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1696,8 +1722,13 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
+<<<<<<< HEAD
 INSERT INTO `users` (`id`, `mobile`, `mail`, `name`, `password`) VALUES
 (8, '9326121847', 'palsujit32@gmail.com', 'Sujeet Pal', '3a05a23e5fd8ef6a8bfac9052b7b6fb0');
+=======
+INSERT INTO `users` (`id`, `mobile`, `name`, `password`) VALUES
+(8, '9326121847', 'Sujeet Pal', '3a05a23e5fd8ef6a8bfac9052b7b6fb0');
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 -- --------------------------------------------------------
 
@@ -1809,7 +1840,11 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 --
 -- AUTO_INCREMENT for table `errors`
@@ -1839,25 +1874,41 @@ ALTER TABLE `mobiledataset`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 --
 -- AUTO_INCREMENT for table `page_analytics`
 --
 ALTER TABLE `page_analytics`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=507;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=466;
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 --
 -- AUTO_INCREMENT for table `product_impression`
 --
 ALTER TABLE `product_impression`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=484;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 --
 -- AUTO_INCREMENT for table `recommend`
 --
 ALTER TABLE `recommend`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 --
 -- AUTO_INCREMENT for table `test`
@@ -1869,7 +1920,11 @@ ALTER TABLE `test`
 -- AUTO_INCREMENT for table `timing`
 --
 ALTER TABLE `timing`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=425;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=385;
+>>>>>>> 0c345ec33fa6711acf98d1fc119fb70ac4a9eb3e
 
 --
 -- AUTO_INCREMENT for table `users`
